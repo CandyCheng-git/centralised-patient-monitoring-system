@@ -27,5 +27,6 @@ Status: implementation complete / awaiting visual validation.
 - DBML syntax reviewed locally; manual import into dbdiagram.io still required.
 - Verification command: `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\verify.ps1`
 - No application code, runtime database infrastructure or real patient data was added.
+- Source commit SHA: `021c436`
 
 Phase 1 is not fully complete until the DBML is imported and visually validated in dbdiagram.io and the exported diagram is placed under `assets/erd/`.
