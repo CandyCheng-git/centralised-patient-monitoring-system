@@ -1,0 +1,68 @@
+Project patient_monitoring {
+  database_type: 'SQL Server'
+  Note: '''
+    Canonical relational model for the centralised patient monitoring case study.
+    Controlled values are documented in the supporting README rather than split into lookup tables.
+  '''
+}
+
+Table Hospital {
+  HospitalId int [pk, increment, not null]
+  HospitalName nvarchar(200) [not null]
+}
+
+Table Patient {
+  PatientId int [pk, increment, not null]
+  HospitalId int [not null]
+  MRN varchar(50) [not null]
+  Sex varchar(20) [not null, note: 'Controlled values: Male, Female, Other']
+  DOB date [not null]
+  FirstName nvarchar(100) [not null]
+  FamilyName nvarchar(100) [not null]
+  CreatedAt datetime2 [not null]
+  UpdatedAt datetime2 [not null]
+
+  indexes {
+    (HospitalId, MRN) [unique, name: 'UX_Patient_HospitalId_MRN']
+  }
+}
+
+Table Encounter {
+  EncounterId int [pk, increment, not null]
+  PatientId int [not null]
+  AdmissionDate date [not null]
+  ConfirmedCovidDate date [note: 'Nullable']
+  CovidStatusOnAdmission varchar(40) [not null, note: 'Controlled values: Confirmed COVID-19, Suspected COVID-19, Not Suspected COVID-19']
+  TransferredFromFacility bit [not null]
+  InitialHospitalAdmissionDate date [note: 'Nullable']
+  HaiAttributedToHealthService bit [not null]
+  DischargeDate date [note: 'Nullable; NULL means the Encounter is open']
+  DischargeStatus varchar(50) [note: 'Nullable; controlled values: Home, Hospital in the Home, Deceased, Transferred to other facility']
+  CreatedAt datetime2 [not null]
+  UpdatedAt datetime2 [not null]
+  CreatedBy nvarchar(100) [not null]
+
+  indexes {
+    AdmissionDate [name: 'IX_Encounter_AdmissionDate']
+    CovidStatusOnAdmission [name: 'IX_Encounter_CovidStatusOnAdmission']
+    DischargeDate [name: 'IX_Encounter_DischargeDate']
+  }
+}
+
+Table DailyLog {
+  DailyLogId int [pk, increment, not null]
+  EncounterId int [not null]
+  LogDate date [not null]
+  LocationStatus varchar(60) [not null, note: 'Controlled values: Ward, ICU, COVID-19 isolation precautions lifted, Discharged']
+  CreatedAt datetime2 [not null]
+  CreatedBy nvarchar(100) [not null]
+
+  indexes {
+    (EncounterId, LogDate) [unique, name: 'UX_DailyLog_EncounterId_LogDate']
+    (LogDate, LocationStatus) [name: 'IX_DailyLog_LogDate_LocationStatus']
+  }
+}
+
+Ref: Patient.HospitalId > Hospital.HospitalId
+Ref: Encounter.PatientId > Patient.PatientId
+Ref: DailyLog.EncounterId > Encounter.EncounterId
