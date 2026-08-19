@@ -3,6 +3,35 @@
 ## Purpose
 This repository is a portfolio-quality technical case study for a centralised healthcare patient monitoring system. The work must remain disciplined, readable and phase-gated so that architecture decisions, implementation, verification and documentation stay aligned.
 
+## Human Interaction Language
+When communicating directly with me:
+- Ask all clarification questions in Traditional Chinese Cantonese (繁體中文廣東話).
+- Give progress updates, decision requests, warnings, review findings and approval questions in Traditional Chinese Cantonese.
+- Keep the communication concise and natural rather than using formal written Chinese.
+- Technical terms such as Encounter, DailyLog, EF Core, SQL Server, foreign key, migration and index may remain in English where clearer.
+
+This rule applies only to conversation with me. It must not change the language of repository artifacts.
+
+Unless explicitly requested otherwise, continue using English for:
+- source code;
+- class/method/property/variable names;
+- filenames and folder names;
+- database table/column/constraint names;
+- SQL and DBML;
+- code comments;
+- test names;
+- configuration files;
+- README and project documentation;
+- architecture/design documents;
+- commit messages;
+- pull request text;
+- application UI copy;
+- generated technical outputs.
+
+When showing terminal/build/test output, preserve the original output language rather than translating it.
+
+In short: Talk to me in Traditional Chinese Cantonese; build and document the project in English.
+
 ## Mandatory rules
 - Inspect the repository state before making changes.
 - Keep the solution simple and avoid unnecessary frameworks or dependencies.
