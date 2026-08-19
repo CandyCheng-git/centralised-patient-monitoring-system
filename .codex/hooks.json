@@ -1,0 +1,12 @@
+{
+  "hooks": {
+    "session_start": {
+      "default": ["python", ".codex/hooks/session_start.py"],
+      "windows": ["python", ".codex/hooks/session_start.py"]
+    },
+    "stop": {
+      "default": ["python", ".codex/hooks/stop_validate.py"],
+      "windows": ["python", ".codex/hooks/stop_validate.py"]
+    }
+  }
+}
