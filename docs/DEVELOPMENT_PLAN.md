@@ -1,195 +1,215 @@
 # Development Plan
 
-This document defines the planned phase order for this repository. The phases are intentionally sequential and should be executed one at a time. This file is a plan only; execution begins only when the project is approved for the next phase.
+This document defines the planned phase order for this repository. The repository is primarily a presentation-first portfolio case study, not a software application implementation project. The design artifacts, diagrams and presentation materials are the primary deliverables.
 
-## Phase 1 — Domain model and ERD
+## Phase 0 — Repository harness — COMPLETE
 ### Objective
-Define the canonical domain model and relationship diagram for Hospital, Patient, Encounter and DailyLog.
+Establish the repository governance, canonical design documentation and the Codex harness needed for disciplined design-first work.
 ### In scope
-- Finalise the model and invariants
-- Document identities, constraints and lifecycle rules
-- Produce ERD and optimistic domain reasoning
+- Repository rules and guardrails
+- Canonical domain documentation
+- Codex skill and agent definitions
+- Verification helper and governance hooks
 ### Out of scope
+- Application implementation
 - .NET scaffolding
-- SQL implementation
-- UI work
+- Frontend or API work
 ### Expected files
-- docs/canonical-solution.md updates if needed
-- docs/DECISIONS.md updates
-- drawio/mermaid or schema notes if introduced
+- AGENTS.md
+- docs/canonical-solution.md
+- docs/DECISIONS.md
+- docs/DEVELOPMENT_PLAN.md
+- docs/PROGRESS.md
+- .agents/skills/patient-monitoring-development/SKILL.md
+- .codex/agents/*
+- .codex/hooks.json
+- scripts/verify.ps1
+### Verification commands
+- `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\verify.ps1`
+- `git status --short --branch`
+### Acceptance criteria
+- The harness exists, is documented and remains focused on design/presentation work.
+### Evidence required before completion
+- Verification output confirming the repository sanity checks pass and the working tree is clean.
+
+## Phase 1 — Relational Data Model / dbdiagram.io ERD
+### Objective
+Create and validate the canonical relational database diagram.
+### Primary artifact
+- design/erd/patient-monitoring.dbml
+### In scope
+- Hospital → Patient → Encounter → DailyLog relational model
+- Primary keys and foreign keys
+- One-to-many cardinalities
+- `UNIQUE(HospitalId, MRN)`
+- `UNIQUE(EncounterId, LogDate)`
+- Nullable discharge fields
+- No persisted NotYetDischarged flag
+- Controlled-value documentation
+- Reporting-index candidates where useful
+### Out of scope
+- .NET application scaffolding
+- Runtime database provisioning
+- Frontend or API implementation
+### Expected files
+- design/erd/patient-monitoring.dbml
+- design/erd/README.md or supporting notes if needed
 ### Verification commands
 - `git diff --stat`
 - repository sanity check script
 ### Acceptance criteria
-- Domain model matches canonical design and is documented before code changes
+- The ERD is suitable for import into dbdiagram.io and export to SVG/PNG for Canva.
 ### Evidence required before completion
-- Review notes confirming alignment with canonical design and no silent domain drift
+- Reviewed ERD against canonical domain model and design decision log with no domain drift.
 
-## Phase 2 — .NET solution scaffold
+## Phase 2 — User Flow / Draw.io
 ### Objective
-Create the .NET project structure and base solution layout without implementing business logic.
+Create one simple activity or user-flow diagram covering the operational journey.
+### Primary artifact
+- design/user-flow/patient-monitoring.drawio
 ### In scope
-- Solution and project creation
-- Configuration and folder structure
-- Dependency baseline
+- Authenticated staff → Hospital → MRN lookup → Patient exists? → load/create Patient → create/open Encounter → event details → daily monitoring → discharged? → close Encounter
+- Export-friendly diagram source
 ### Out of scope
-- Business workflow logic
-- Domain validation beyond scaffolding
+- Second ERD
+- Application implementation
 ### Expected files
-- .sln and .csproj files
-- App/Domain or similar folder structure
+- design/user-flow/patient-monitoring.drawio
+- exported SVG/PNG if generated during the design phase
 ### Verification commands
-- `dotnet restore`
-- `dotnet build`
+- `git diff --stat`
+- repository sanity check script
 ### Acceptance criteria
-- Solution builds cleanly with no business logic beyond the scaffolding
+- The diagram is simple, suitable for export and placement in Canva, and aligned with the canonical workflow.
 ### Evidence required before completion
-- Successful build output and clear project layout review
+- Diagram consistency review confirming it covers the expected flow without duplicating the ERD.
 
-## Phase 3 — SQL Server / persistence layer
+## Phase 3 — Figma Wireframe
 ### Objective
-Create persistence design and database artefacts for the canonical domain model.
+Prepare the canonical form layout and behaviour specification for Figma.
 ### In scope
-- SQL schema
-- Constraints and indexes
-- Migration or DDL scripts
+- Hospital + MRN lookup
+- Patient Details
+- Event Details
+- Conditional transfer field
+- Discharge Details
+- Conditional discharge fields
+- Daily Monitoring table
+- Add Daily Log
+- Save Draft / Submit
+- Documentation for field mapping, labels, states and acceptance checklist
 ### Out of scope
-- UI-specific workflow logic
-- Complex reporting logic beyond schema support
+- Replacing Figma with generated app code
+- Production-grade UI implementation
 ### Expected files
-- SQL migration files or schema scripts
-- Database design notes
+- design/figma/README.md or field maps
+- design/figma/flow-notes.md or similar planning docs
 ### Verification commands
-- SQL schema validation or migration command
-- repository verification script
+- repository sanity check script
+- design review checklist
 ### Acceptance criteria
-- Model supports Hospital, Patient, Encounter and DailyLog relationships with constraints
+- The wireframe plan is clear enough for Figma execution and consistent with the canonical domain model.
 ### Evidence required before completion
-- Schema review confirming uniqueness and referential integrity rules
+- Review against the required form states and acceptance checklist.
 
-## Phase 4 — Patient + Encounter workflow
+## Phase 4 — Canva Presentation Assembly
 ### Objective
-Implement the patient and encounter lifecycle behaviour with validation and persistence support.
+Prepare all content needed for the final Canva presentation.
+### Primary artifact
+- docs/canva-slide-plan.md
 ### In scope
-- Create and edit patient data
-- Register and manage encounters
-- Discharge handling rules and lifecycle states
+- Slide plan and structure
+- Problem / Objective
+- Assumptions
+- Solution Overview
+- Wireframe
+- User Flow / UML
+- Relational Data Model
+- Validation + Reporting
+- Summary
+- Slide notes, captions and speaker notes
 ### Out of scope
-- Daily monitoring logs
-- Full audit and reporting workflows
+- Replacement HTML presentation
+- Application implementation
 ### Expected files
-- Domain entities and service classes
-- Workflow tests
+- docs/canva-slide-plan.md
+- supporting slide content notes if needed
 ### Verification commands
-- `dotnet test`
-- targeted validation checks
+- repository sanity check script
+- design consistency review
 ### Acceptance criteria
-- Patient and encounter workflow matches documented lifecycle rules and validation constraints
+- All slides have objective, title, max 2–4 key messages, visual artifact, caption, speaker note and estimated presentation time.
 ### Evidence required before completion
-- Passing targeted tests and diff review confirming no domain drift
+- Review confirming the slide structure is consistent with the ERD, UML and wireframe artifacts.
 
-## Phase 5 — Daily monitoring + discharge workflow
+## Phase 5 — Presentation Review
 ### Objective
-Implement daily monitoring entries and the encounter discharge workflow.
+Review the full presentation for a 5–10 minute interview.
 ### In scope
-- DailyLog creation and management
-- Daily date uniqueness rule
-- Discharge date rules and open-encounter handling
+- Requirement coverage
+- Simple and elegant design
+- Consistency across ERD, UML and wireframe
+- SQL/database reasoning
+- Validation
+- Reporting
+- Privacy
+- Unnecessary complexity
+- Likely panel questions
+- Timing
 ### Out of scope
-- Full reporting dashboards
-- UX polishing
+- New product scope
+- Implementation work
 ### Expected files
-- DailyLog model, repository/service code, tests
+- docs/presentation-review.md or similar review notes
 ### Verification commands
-- `dotnet test`
-- validation scripts focused on business rules
+- presentation review checklist
+- repository sanity check script
 ### Acceptance criteria
-- One log per Encounter per date and no redundant NotYetDischarged state
+- The interview presentation is coherent, realistic and suitable for approximately 7 minutes of speaking time.
 ### Evidence required before completion
-- Tests covering edge cases and final reviewed rule compliance
+- Final review notes covering timing, risk areas and likely follow-up interview questions.
 
-## Phase 6 — Validation and automated testing
+## Phase 6 — Portfolio Packaging
 ### Objective
-Strengthen validation, regression coverage and quality gates around the domain rules.
+Convert the finished interview artifacts into an anonymised public technical case study.
 ### In scope
-- Input validation
-- Server-side checks
-- Automated tests for critical rules
+- Polished README
+- Exported diagrams
+- Final PDF
+- Canva view-only link
+- Screenshots
+- Public-facing packaging without exposing interview details or private materials
 ### Out of scope
-- Presentational UI polish
-- Broad architecture redesign
-### Expected files
-- Validator classes, service tests, integration tests
-### Verification commands
-- `dotnet test`
-- repository verification script
-### Acceptance criteria
-- Validation rules are explicit, test-covered and aligned with the canonical design
-### Evidence required before completion
-- Passing regression suite and documented review of validation coverage
-
-## Phase 7 — Reporting/query demonstrations
-### Objective
-Create readable reporting and query examples that demonstrate the reporting-ready relational structure.
-### In scope
-- Sample queries
-- Reporting patterns and summaries
-- Demonstration data and outputs
-### Out of scope
-- Product-grade BI suite
-- Production deployment concerns
-### Expected files
-- Reporting scripts, SQL examples, README updates
-### Verification commands
-- Query execution checks
-- verification script
-### Acceptance criteria
-- Reporting examples reflect actual schema and domain behaviour
-### Evidence required before completion
-- Query output and documentation review showing alignment with the model
-
-## Phase 8 — UX/presentation assets
-### Objective
-Prepare portfolio-facing presentation assets, demo flows and UI polish based on the implemented system.
-### In scope
-- UI screens or mockups
-- Narrative presentation materials
-- Demo flow notes
-### Out of scope
-- Production compliance certification
-- Real healthcare deployment design
-### Expected files
-- UI assets, screenshots, markdown or static presentation files
-### Verification commands
-- Manual review and screenshot verification
-- repository sanity checks
-### Acceptance criteria
-- The presentation demonstrates the implemented behaviour without claiming production deployment
-### Evidence required before completion
-- Review of final presentation materials and their alignment with implemented behaviour
-
-## Phase 9 — Portfolio README and final quality review
-### Objective
-Prepare the final repository presentation, documentation and final quality review.
-### In scope
-- README updates
-- Final portfolio narrative
-- Documentation completeness and consistency
-### Out of scope
-- New feature work
-- Additional architecture churn
+- Publishing original interview instructions or organisation-specific materials
+- Application development
 ### Expected files
 - README.md updates
-- docs/PROGRESS.md summaries
-- final review notes
+- final exported presentation assets
+- final packaging notes
 ### Verification commands
 - `git status --short --branch`
-- repository verification script
-- targeted documentation review
+- repository sanity check script
 ### Acceptance criteria
-- Documentation is aligned with actual implementation and repository is ready for portfolio review
+- The repository is portfolio-ready and anonymised without leaking sensitive details.
 ### Evidence required before completion
-- Final diff review, passed verification commands and clean repository state
+- Final review showing clean packaging, documented evidence and no sensitive content leakage.
 
 ## Phase completion rule
-A phase is not complete until evidence is recorded, the documentation is current, the diff is reviewed, the applicable checks have been run and the resulting commit SHA is recorded in docs/PROGRESS.md.
+A phase is not complete until the relevant artifact is reviewed, the design remains consistent with the canonical domain model, the repository diff is inspected, the required checks are run and the evidence is recorded.
+
+## Coding boundary
+The only code-like artifacts currently expected are:
+- DBML for dbdiagram.io
+- Draw.io XML or diagram source where useful
+- lightweight verification scripts already part of the harness
+
+Do not scaffold:
+- .NET
+- C#
+- EF Core
+- SQL runtime databases
+- APIs
+- frontend applications
+- authentication systems
+
+unless explicitly requested later in a separate implementation phase.

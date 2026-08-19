@@ -3,7 +3,7 @@
 ## When this skill activates
 Activate this skill when working in this repository on the centralised patient monitoring system project.
 
-This skill is designed to enforce disciplined phase-based development and to protect the canonical domain model.
+This skill is designed to enforce disciplined phase-based development for a presentation-first portfolio case study. It protects the canonical domain model while keeping the work focused on design artifacts, diagram source, presentation materials and portfolio packaging.
 
 ## Human Interaction Language
 When communicating directly with me:
@@ -56,23 +56,25 @@ Before implementing a phase, complete all of the following:
 - Keep the scope narrow and focused on the active phase.
 - Do not quietly change domain assumptions.
 - Preserve the canonical domain terminology: Hospital, Patient, Encounter and DailyLog.
-- Add or update tests that match the phase being implemented.
-- Prefer explicit validation and database constraints over implicit assumptions.
-- Do not introduce unnecessary frameworks, dependencies or broad refactors.
+- Produce the expected design artifacts for the active phase: DBML, Draw.io sources, wireframe notes, slide content or review documentation.
+- Prefer explicit validation, relational reasoning and design clarity over speculative implementation.
+- Do not introduce unnecessary frameworks, dependencies, or application scaffolding.
+- Do not create .NET, API, frontend or authentication implementation unless it is explicitly approved in a separate phase.
 
 ## Before marking a phase complete
 Before marking a phase complete, complete all of the following:
 
-1. Run the appropriate build/tests/checks.
-2. Inspect the diff.
-3. Confirm canonical-domain consistency.
-4. Confirm documentation is current.
-5. Perform an independent review pass.
-6. Record progress and evidence.
-7. Commit the completed phase.
-8. Push the completed phase.
-9. Verify the working tree is clean.
-10. Record the resulting commit SHA in docs/PROGRESS.md.
+1. Inspect the diff.
+2. Verify the canonical-domain model has not changed.
+3. Verify no application code was introduced.
+4. Run the relevant repository checks.
+5. Confirm documentation is current.
+6. Perform an independent review pass.
+7. Record progress and evidence.
+8. Commit the completed phase.
+9. Push the completed phase.
+10. Verify the working tree is clean.
+11. Record the resulting commit SHA in docs/PROGRESS.md.
 
 ## Verification rules
 - Never fake verification evidence.
@@ -81,9 +83,10 @@ Before marking a phase complete, complete all of the following:
 - If a domain decision needs to change, update the canonical design first and record the decision.
 
 ## Review expectations
-- Review for correctness, data integrity, security/privacy, validation, regression risk and needless complexity.
+- Review for correctness, data integrity, privacy and presentation clarity.
 - Confirm the work stays within the active phase.
-- Check that README and project documentation remain aligned with the implemented behaviour.
+- Confirm the repository remains aligned with a presentation-first, design-driven portfolio case study.
+- Confirm the design artifacts are consistent across ERD, UML, wireframe and presentation materials.
 
 ## Completion standard
-Only mark a phase complete when the code, tests, documentation and evidence are all aligned. The repository must remain disciplined and portfolio-ready.
+Only mark a phase complete when the design artifacts, review findings, evidence and documentation remain aligned. The repository must remain disciplined, portfolio-ready and free of unnecessary application scaffolding.

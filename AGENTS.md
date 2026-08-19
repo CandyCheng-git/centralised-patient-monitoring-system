@@ -1,7 +1,18 @@
 # Repository Agent Instructions
 
 ## Purpose
-This repository is a portfolio-quality technical case study for a centralised healthcare patient monitoring system. The work must remain disciplined, readable and phase-gated so that architecture decisions, implementation, verification and documentation stay aligned.
+This repository is primarily a portfolio-quality presentation and design case study for a centralised healthcare patient monitoring system. The main deliverable is a Canva interview presentation supported by canonical design decisions, DBML ERD source, Draw.io user-flow source, Figma planning materials and packaging assets.
+
+The repository exists to manage:
+- canonical design decisions;
+- dbdiagram.io ERD source;
+- Draw.io User Flow / UML source;
+- Figma wireframe planning and exported assets;
+- Canva slide content and presentation structure;
+- presentation QA;
+- portfolio packaging.
+
+It is not primarily an application-development project. Do not build a .NET application, API, frontend, or production system unless a separate implementation phase is explicitly approved in the future.
 
 ## Human Interaction Language
 When communicating directly with me:
@@ -40,6 +51,7 @@ In short: Talk to me in Traditional Chinese Cantonese; build and document the pr
 - If a domain decision needs to change, update the canonical design documentation first.
 - No real patient information, private health data, or interview contact information may be added to this repository.
 - Prefer explicit validation and database constraints over implicit assumptions.
+- Do not scaffold .NET, C#, EF Core, SQL runtime databases, APIs, frontend applications or authentication systems unless a separate implementation phase is explicitly approved.
 - Every implementation phase must include tests appropriate to that phase.
 - Never claim a test passed unless it was actually run.
 - Keep changes focused on the active phase and avoid mixing large refactors into feature work.
@@ -66,12 +78,14 @@ In short: Talk to me in Traditional Chinese Cantonese; build and document the pr
 - Keep implementation and review functions separate; architecture, implementation and review should be clearly distinguishable.
 - The repository must remain focused on the current phase and avoid broad speculative scope.
 - Significant design changes must be documented before being applied.
+- Keep the repository focused on design artifacts, diagram sources, presentation assets, and portfolio packaging instead of software scaffolding.
 
 ## Verification and evidence
 - No implementation phase is complete until the relevant checks have been run and recorded.
 - Evidence must be explicit: commands run, outcomes observed and any remaining risks.
 - The working tree must be checked before completion claims are made.
 - The commit SHA should be recorded in docs/PROGRESS.md when a phase is finished and verified.
+- Verify that no canonical domain rules changed and no application code was introduced during the active phase.
 
 ## Documentation alignment
 - The canonical design document is the source of truth for domain behaviour.
