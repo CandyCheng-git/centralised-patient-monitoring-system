@@ -1,96 +1,92 @@
 <mxfile host="app.diagrams.net" modified="2026-08-20T00:00:00.000Z" agent="GitHub Copilot" version="24.7.17" type="device">
   <diagram id="patient-monitoring-flow" name="Patient Monitoring User Flow">
-    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="1654" math="0" shadow="0">
+    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1400" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
 
         <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#263238;strokeColor=#263238;" vertex="1" parent="1">
-          <mxGeometry x="485" y="30" width="30" height="30" as="geometry" />
+          <mxGeometry x="535" y="25" width="30" height="30" as="geometry" />
         </mxCell>
         <mxCell id="staff" value="Authenticated Hospital Staff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="90" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="75" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="select-hospital" value="Select / Confirm Hospital" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="170" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="145" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="enter-mrn" value="Enter MRN / UR No." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="250" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="215" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="patient-exists" value="Patient exists?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="430" y="330" width="140" height="80" as="geometry" />
+          <mxGeometry x="480" y="285" width="140" height="75" as="geometry" />
         </mxCell>
         <mxCell id="load-patient" value="Load Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="200" y="445" width="180" height="50" as="geometry" />
+          <mxGeometry x="220" y="395" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="create-patient" value="Enter / Create Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="620" y="445" width="180" height="50" as="geometry" />
-        </mxCell>
-        <mxCell id="merge-patient" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#49636a;" vertex="1" parent="1">
-          <mxGeometry x="485" y="535" width="30" height="30" as="geometry" />
+          <mxGeometry x="700" y="395" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="create-encounter" value="Create / Open Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="605" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="475" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="event-details" value="Enter Event Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="685" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="545" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="transferred" value="Transferred from another facility?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=6;" vertex="1" parent="1">
-          <mxGeometry x="420" y="765" width="160" height="90" as="geometry" />
+          <mxGeometry x="470" y="615" width="160" height="85" as="geometry" />
         </mxCell>
         <mxCell id="initial-admission" value="Enter Initial Hospital Admission Date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="160" y="885" width="220" height="50" as="geometry" />
+          <mxGeometry x="150" y="735" width="220" height="45" as="geometry" />
         </mxCell>
         <mxCell id="save-encounter" value="Save Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="980" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="805" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="daily-monitoring" value="Daily Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1060" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="875" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="add-daily-log" value="Add Daily Log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1140" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="945" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="discharged" value="Discharged?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="430" y="1220" width="140" height="80" as="geometry" />
+          <mxGeometry x="480" y="1015" width="140" height="75" as="geometry" />
         </mxCell>
         <mxCell id="continue-monitoring" value="Continue Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="700" y="1330" width="180" height="50" as="geometry" />
+          <mxGeometry x="820" y="1030" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="discharge-details" value="Enter Discharge Date + Discharge Status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="180" y="1330" width="220" height="50" as="geometry" />
+          <mxGeometry x="160" y="1140" width="220" height="45" as="geometry" />
         </mxCell>
         <mxCell id="close-encounter" value="Close Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dce9e3;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="410" y="1430" width="180" height="50" as="geometry" />
+          <mxGeometry x="460" y="1210" width="180" height="45" as="geometry" />
         </mxCell>
         <mxCell id="end" value="" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#263238;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="475" y="1510" width="50" height="50" as="geometry" />
+          <mxGeometry x="525" y="1280" width="50" height="50" as="geometry" />
         </mxCell>
 
-        <mxCell id="design-note" value="Reduce duplication&lt;br&gt;Guide valid states&lt;br&gt;Support repeated daily monitoring" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f1e8;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=10;" vertex="1" parent="1">
-          <mxGeometry x="820" y="180" width="230" height="100" as="geometry" />
+        <mxCell id="design-note" value="Reduce duplication&lt;br&gt;Guide valid states&lt;br&gt;Support repeated daily monitoring" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f1e8;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="825" y="140" width="220" height="85" as="geometry" />
         </mxCell>
 
         <mxCell id="edge-start-staff" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="start" target="staff"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-staff-hospital" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="staff" target="select-hospital"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-hospital-mrn" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="select-hospital" target="enter-mrn"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-mrn-exists" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="enter-mrn" target="patient-exists"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-exists-load" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="load-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="290" y="370" /><mxPoint x="290" y="445" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-exists-create" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="create-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="710" y="370" /><mxPoint x="710" y="445" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-load-merge" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="load-patient" target="merge-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="290" y="550" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-create-merge" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="create-patient" target="merge-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="710" y="550" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-merge-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="merge-patient" target="create-encounter"><mxGeometry relative="1" as="geometry" /></mxCell>
+        <mxCell id="edge-exists-load" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="load-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="310" y="325" /><mxPoint x="310" y="395" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-exists-create" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="create-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="790" y="325" /><mxPoint x="790" y="395" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-load-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="load-patient" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="310" y="455" /><mxPoint x="550" y="455" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-create-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="create-patient" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="790" y="455" /><mxPoint x="550" y="455" /></Array></mxGeometry></mxCell>
         <mxCell id="edge-encounter-event" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="create-encounter" target="event-details"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-event-transfer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="event-details" target="transferred"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-transfer-initial" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="initial-admission"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="810" /><mxPoint x="270" y="885" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-transfer-save" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="650" y="810" /><mxPoint x="650" y="1005" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-initial-save" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="initial-admission" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="1005" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-transfer-initial" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="initial-admission"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="260" y="655" /><mxPoint x="260" y="735" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-transfer-save" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="720" y="655" /><mxPoint x="720" y="827" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-initial-save" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="initial-admission" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="260" y="827" /><mxPoint x="460" y="827" /></Array></mxGeometry></mxCell>
         <mxCell id="edge-save-daily" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="save-encounter" target="daily-monitoring"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-daily-add" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="daily-monitoring" target="add-daily-log"><mxGeometry relative="1" as="geometry" /></mxCell>
         <mxCell id="edge-add-discharged" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="add-daily-log" target="discharged"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-discharged-no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="continue-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="790" y="1260" /><mxPoint x="790" y="1330" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-discharged-yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="discharge-details"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="290" y="1260" /><mxPoint x="290" y="1330" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-continue-loop" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="continue-monitoring" target="daily-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="940" y="1355" /><mxPoint x="940" y="1040" /><mxPoint x="590" y="1040" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-discharge-close" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="discharge-details" target="close-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="290" y="1455" /><mxPoint x="410" y="1455" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-discharged-no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="continue-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="750" y="1052" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-discharged-yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="discharge-details"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="1052" /><mxPoint x="270" y="1140" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-continue-loop" value="Loop: continue daily monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="continue-monitoring" target="daily-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1050" y="1052" /><mxPoint x="1050" y="850" /><mxPoint x="640" y="850" /></Array></mxGeometry></mxCell>
+        <mxCell id="edge-discharge-close" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="discharge-details" target="close-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="1232" /><mxPoint x="460" y="1232" /></Array></mxGeometry></mxCell>
         <mxCell id="edge-close-end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="close-encounter" target="end"><mxGeometry relative="1" as="geometry" /></mxCell>
       </root>
     </mxGraphModel>
