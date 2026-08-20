@@ -1,0 +1,59 @@
+<mxfile host="app.diagrams.net" modified="2026-08-20T00:00:00.000Z" agent="GitHub Copilot" version="24.7.17" type="device">
+  <diagram id="patient-monitoring-use-case" name="Patient Monitoring Use Cases">
+    <mxGraphModel dx="1200" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="system-boundary" value="Centralised Patient Monitoring" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8fbfb;strokeColor=#49636a;fontColor=#263238;fontSize=16;fontStyle=1;verticalAlign=top;align=left;spacingTop=12;spacingLeft=16;" vertex="1" parent="1">
+          <mxGeometry x="250" y="45" width="880" height="780" as="geometry" />
+        </mxCell>
+
+        <mxCell id="hospital-staff" value="Hospital Staff" style="shape=umlActor;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="80" y="385" width="100" height="120" as="geometry" />
+        </mxCell>
+
+        <mxCell id="search-patient" value="Search Patient by Hospital + MRN" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="310" y="125" width="230" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="create-patient" value="Create Patient" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="310" y="245" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="load-patient" value="Load Patient Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="310" y="365" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="view-history" value="View Monitoring History" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="310" y="485" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="create-encounter" value="Create / Open Encounter" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="125" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="record-event" value="Record Event Details" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="245" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="record-transfer" value="Record Transfer Information" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="930" y="245" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="add-daily-log" value="Add Daily Log" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="425" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="record-discharge" value="Record Discharge" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
+          <mxGeometry x="680" y="605" width="190" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="assoc-search" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="search-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="155" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-create-patient" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="create-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="275" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-load-patient" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="load-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="395" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-history" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="view-history"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="515" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="95" /><mxPoint x="620" y="95" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-event" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="record-event"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="275" /><mxPoint x="620" y="275" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-transfer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="record-transfer"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="545" /><mxPoint x="900" y="545" /><mxPoint x="900" y="275" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-daily-log" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="add-daily-log"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="575" /><mxPoint x="620" y="575" /></Array></mxGeometry></mxCell>
+        <mxCell id="assoc-discharge" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="hospital-staff" target="record-discharge"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="210" y="665" /><mxPoint x="620" y="665" /></Array></mxGeometry></mxCell>
+
+        <mxCell id="extend-transfer" value="&lt;&lt;extend&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 6;endArrow=block;endFill=0;strokeColor=#9b7a2f;fontColor=#9b7a2f;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="record-transfer" target="record-event"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="930" y="215" /><mxPoint x="775" y="215" /></Array></mxGeometry></mxCell>
+        <mxCell id="extend-discharge" value="&lt;&lt;extend&gt;&gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;dashPattern=6 6;endArrow=block;endFill=0;strokeColor=#9b7a2f;fontColor=#9b7a2f;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="record-discharge" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="650" y="635" /><mxPoint x="650" y="185" /></Array></mxGeometry></mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
