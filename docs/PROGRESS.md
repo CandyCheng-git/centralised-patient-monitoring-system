@@ -30,3 +30,18 @@ Status: implementation complete / awaiting visual validation.
 - Source commit SHA: `021c436`
 
 Phase 1 is not fully complete until the DBML is imported and visually validated in dbdiagram.io and the exported diagram is placed under `assets/erd/`.
+
+## Phase 2
+Status: implementation complete / awaiting visual validation.
+
+### Artifacts
+
+- `design/user-flow/patient-monitoring.drawio`
+
+### Evidence
+
+- The workflow remains consistent with the canonical Hospital -> Patient -> Encounter -> DailyLog model and does not introduce a second ERD or application code.
+- Reviewer check passed the required staff, hospital, MRN, patient, encounter, transfer, daily monitoring, discharge and close-Encounter flow, including labelled branches and the repeated-monitoring loop.
+- Draw.io XML parsed locally; required labels, edges, three design messages and scope boundaries were asserted.
+- Verification command: `powershell -NoProfile -ExecutionPolicy Bypass -File scripts\\verify.ps1`
+- Manual opening in Draw.io and visual export to PNG/SVG remain required. The vertical layout and long monitoring loop should be checked for Canva readability.
