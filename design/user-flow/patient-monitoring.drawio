@@ -1,94 +1,209 @@
-<mxfile host="app.diagrams.net" modified="2026-08-20T00:00:00.000Z" agent="GitHub Copilot" version="24.7.17" type="device">
-  <diagram id="patient-monitoring-flow" name="Patient Monitoring User Flow">
-    <mxGraphModel dx="1200" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1400" math="0" shadow="0">
-      <root>
-        <mxCell id="0" />
-        <mxCell id="1" parent="0" />
-
-        <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#263238;strokeColor=#263238;" vertex="1" parent="1">
-          <mxGeometry x="535" y="25" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="staff" value="Authenticated Hospital Staff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="75" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="select-hospital" value="Select / Confirm Hospital" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="145" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="enter-mrn" value="Enter MRN / UR No." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="215" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="patient-exists" value="Patient exists?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="480" y="285" width="140" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="load-patient" value="Load Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="220" y="395" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="create-patient" value="Enter / Create Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="700" y="395" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="create-encounter" value="Create / Open Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="475" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="event-details" value="Enter Event Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="545" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="transferred" value="Transferred from another facility?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=6;" vertex="1" parent="1">
-          <mxGeometry x="470" y="615" width="160" height="85" as="geometry" />
-        </mxCell>
-        <mxCell id="initial-admission" value="Enter Initial Hospital Admission Date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="150" y="735" width="220" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="save-encounter" value="Save Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="805" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="daily-monitoring" value="Daily Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="875" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="add-daily-log" value="Add Daily Log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="945" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="discharged" value="Discharged?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="480" y="1015" width="140" height="75" as="geometry" />
-        </mxCell>
-        <mxCell id="continue-monitoring" value="Continue Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="820" y="1030" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="discharge-details" value="Enter Discharge Date + Discharge Status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="160" y="1140" width="220" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="close-encounter" value="Close Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dce9e3;strokeColor=#49636a;fontColor=#263238;fontSize=14;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="460" y="1210" width="180" height="45" as="geometry" />
-        </mxCell>
-        <mxCell id="end" value="" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#263238;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="525" y="1280" width="50" height="50" as="geometry" />
-        </mxCell>
-
-        <mxCell id="design-note" value="Reduce duplication&lt;br&gt;Guide valid states&lt;br&gt;Support repeated daily monitoring" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f1e8;strokeColor=#9b7a2f;fontColor=#263238;fontSize=13;spacing=8;" vertex="1" parent="1">
-          <mxGeometry x="825" y="140" width="220" height="85" as="geometry" />
-        </mxCell>
-
-        <mxCell id="edge-start-staff" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="start" target="staff"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-staff-hospital" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="staff" target="select-hospital"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-hospital-mrn" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="select-hospital" target="enter-mrn"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-mrn-exists" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="enter-mrn" target="patient-exists"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-exists-load" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="load-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="310" y="325" /><mxPoint x="310" y="395" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-exists-create" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="patient-exists" target="create-patient"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="790" y="325" /><mxPoint x="790" y="395" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-load-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="load-patient" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="310" y="455" /><mxPoint x="550" y="455" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-create-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="create-patient" target="create-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="790" y="455" /><mxPoint x="550" y="455" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-encounter-event" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="create-encounter" target="event-details"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-event-transfer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="event-details" target="transferred"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-transfer-initial" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="initial-admission"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="260" y="655" /><mxPoint x="260" y="735" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-transfer-save" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="transferred" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="720" y="655" /><mxPoint x="720" y="827" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-initial-save" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="initial-admission" target="save-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="260" y="827" /><mxPoint x="460" y="827" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-save-daily" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="save-encounter" target="daily-monitoring"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-daily-add" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="daily-monitoring" target="add-daily-log"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-add-discharged" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="add-daily-log" target="discharged"><mxGeometry relative="1" as="geometry" /></mxCell>
-        <mxCell id="edge-discharged-no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="continue-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="750" y="1052" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-discharged-yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="discharged" target="discharge-details"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="1052" /><mxPoint x="270" y="1140" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-continue-loop" value="Loop: continue daily monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;" edge="1" parent="1" source="continue-monitoring" target="daily-monitoring"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1050" y="1052" /><mxPoint x="1050" y="850" /><mxPoint x="640" y="850" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-discharge-close" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="discharge-details" target="close-encounter"><mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="270" y="1232" /><mxPoint x="460" y="1232" /></Array></mxGeometry></mxCell>
-        <mxCell id="edge-close-end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;" edge="1" parent="1" source="close-encounter" target="end"><mxGeometry relative="1" as="geometry" /></mxCell>
-      </root>
-    </mxGraphModel>
-  </diagram>
+<mxfile host="65bd71144e">
+    <diagram id="patient-monitoring-flow" name="Patient Monitoring User Flow">
+        <mxGraphModel dx="2815" dy="1018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="1400" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;fillColor=#263238;strokeColor=#263238;fontSize=20;" parent="1" vertex="1">
+                    <mxGeometry x="535" y="25" width="30" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="staff" value="Authenticated Hospital Staff" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="410" y="72" width="280" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="select-hospital" value="Select / Confirm Hospital" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="420" y="130" width="260" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="enter-mrn" value="Enter MRN / UR No." style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="420" y="190" width="260" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="patient-exists" value="Patient exists?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="430" y="250" width="230" height="75" as="geometry"/>
+                </mxCell>
+                <mxCell id="load-patient" value="Load Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="219" y="325" width="270" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="create-patient" value="Enter / Create Patient Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="600" y="325" width="305" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="create-encounter" value="Create / Open Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="390" y="393" width="320" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="event-details" value="Enter Event Details" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="390" y="450" width="320" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="transferred" value="Transferred from another facility?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=20;spacing=6;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="322.5" y="510" width="455" height="85" as="geometry"/>
+                </mxCell>
+                <mxCell id="initial-admission" value="Enter Initial Hospital Admission Date" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="69" y="595" width="385" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="save-encounter" value="Save Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="430" y="650" width="240" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="daily-monitoring" value="Daily Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="430" y="710" width="240" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="add-daily-log" value="Add Daily Log" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="430" y="770" width="240" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="discharged" value="Discharged?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff7df;strokeColor=#9b7a2f;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="455" y="830" width="190" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="continue-monitoring" value="Continue Monitoring" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="710" y="837.5" width="270" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="discharge-details" value="Enter Discharge Date + Discharge Status" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f0f2;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="200" y="900" width="440" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="close-encounter" value="Close Encounter" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dce9e3;strokeColor=#49636a;fontColor=#263238;fontSize=20;spacing=8;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="445" y="960" width="210" height="45" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" value="" style="shape=doubleEllipse;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#263238;strokeWidth=2;fontSize=14;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="525" y="1020" width="50" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="design-note" value="&lt;ul style=&quot;margin-bottom: 22px; line-height: 190%;&quot;&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;&lt;b&gt;Reduce duplication&lt;/b&gt;&lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;Reuse existing patient information.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;&lt;b&gt;Guide users through valid states&lt;/b&gt;&lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;Conditional transfer and discharge paths.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;&lt;b&gt;Support repeated daily monitoring&lt;/b&gt;&lt;/span&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;caret-color: rgb(0, 151, 178); --Ys-XuQ: none; font-kerning: normal;&quot; class=&quot;a_GcMg font-feature-liga-off font-feature-clig-off font-feature-calt-off text-decoration-none text-strikethrough-none&quot;&gt;Daily logs remain attached to one encounter.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;/ul&gt;" style="shape=note;whiteSpace=wrap;html=1;fillColor=#f5f1e8;strokeColor=#9b7a2f;fontColor=#263238;fontSize=18;spacing=8;align=left;textShadow=0;" parent="1" vertex="1">
+                    <mxGeometry x="-440" y="470" width="490" height="267" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-start-staff" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="start" target="staff" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="550" y="70"/>
+                            <mxPoint x="550" y="70"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-staff-hospital" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="staff" target="select-hospital" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="550" y="120"/>
+                            <mxPoint x="550" y="120"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-hospital-mrn" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="select-hospital" target="enter-mrn" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="550" y="180"/>
+                            <mxPoint x="550" y="180"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-mrn-exists" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="enter-mrn" target="patient-exists" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="590" y="260" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-exists-load" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="patient-exists" target="load-patient" edge="1">
+                    <mxGeometry x="-0.444" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="354" y="288"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-exists-create" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="patient-exists" target="create-patient" edge="1">
+                    <mxGeometry x="-0.4541" relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="690" y="288"/>
+                            <mxPoint x="690" y="290"/>
+                            <mxPoint x="752" y="290"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-load-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="load-patient" target="create-encounter" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="354" y="380"/>
+                            <mxPoint x="550" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-create-encounter" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="create-patient" target="create-encounter" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="752" y="380"/>
+                            <mxPoint x="550" y="380"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-encounter-event" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="create-encounter" target="event-details" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-event-transfer" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="event-details" target="transferred" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-transfer-initial" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="transferred" target="initial-admission" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="261" y="552"/>
+                            <mxPoint x="261" y="595"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-transfer-save" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;fontStyle=1" parent="1" source="transferred" target="save-encounter" edge="1">
+                    <mxGeometry x="-0.8232" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="850" y="553"/>
+                            <mxPoint x="850" y="670"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-initial-save" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;fontStyle=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="initial-admission" target="save-encounter" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="262" y="673"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-save-daily" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="save-encounter" target="daily-monitoring" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-daily-add" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="daily-monitoring" target="add-daily-log" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-add-discharged" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="add-daily-log" target="discharged" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="edge-discharged-no" value="No" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="discharged" target="continue-monitoring" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points"/>
+                        <mxPoint x="690" y="867.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-discharged-yes" value="Yes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="discharged" target="discharge-details" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="420" y="860"/>
+                        </Array>
+                        <mxPoint x="415" y="925" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-continue-loop" value="Loop: continue daily monitoring" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontColor=#263238;labelBackgroundColor=#ffffff;fontSize=20;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;fontStyle=1" parent="1" source="continue-monitoring" target="daily-monitoring" edge="1">
+                    <mxGeometry x="-0.5884" y="15" relative="1" as="geometry">
+                        <mxPoint y="-1" as="offset"/>
+                        <Array as="points">
+                            <mxPoint x="780" y="733"/>
+                            <mxPoint x="640" y="733"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-discharge-close" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="discharge-details" target="close-encounter" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <Array as="points">
+                            <mxPoint x="420" y="983"/>
+                        </Array>
+                        <mxPoint x="415" y="970" as="sourcePoint"/>
+                        <mxPoint x="410" y="1055" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="edge-close-end" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;strokeColor=#49636a;fontSize=20;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontStyle=1" parent="1" source="close-encounter" target="end" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="550" y="1095" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
 </mxfile>
