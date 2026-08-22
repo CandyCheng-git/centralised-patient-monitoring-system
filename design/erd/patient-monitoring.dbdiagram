@@ -1,0 +1,86 @@
+{
+  "version": "3.0.0",
+  "darkMode": true,
+  "gridEnabling": false,
+  "currentViewName": null,
+  "defaultView": {
+    "detailLevel": "All",
+    "relationshipMode": "All",
+    "tablePositions": [
+      {
+        "name": "Hospital",
+        "schemaName": "public",
+        "x": 12,
+        "y": 12
+      },
+      {
+        "name": "Patient",
+        "schemaName": "public",
+        "x": 533.48046875,
+        "y": 12
+      },
+      {
+        "name": "Encounter",
+        "schemaName": "public",
+        "x": 1043.9287109375,
+        "y": 12
+      },
+      {
+        "name": "DailyLog",
+        "schemaName": "public",
+        "x": 1637.45703125,
+        "y": 12
+      }
+    ],
+    "tableGroupCollapseStates": [],
+    "stickyNoteLayouts": [],
+    "referencePaths": [
+      {
+        "firstFieldNames": [
+          "HospitalId"
+        ],
+        "firstTableName": "Patient",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "HospitalId"
+        ],
+        "secondTableName": "Hospital",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "PatientId"
+        ],
+        "firstTableName": "Encounter",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "PatientId"
+        ],
+        "secondTableName": "Patient",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      },
+      {
+        "firstFieldNames": [
+          "EncounterId"
+        ],
+        "firstTableName": "DailyLog",
+        "firstSchemaName": "public",
+        "firstRelation": "*",
+        "secondFieldNames": [
+          "EncounterId"
+        ],
+        "secondTableName": "Encounter",
+        "secondSchemaName": "public",
+        "secondRelation": "1",
+        "checkPoints": []
+      }
+    ]
+  },
+  "views": {}
+}
