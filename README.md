@@ -18,7 +18,7 @@ The design separates reusable patient identity from hospital encounters and recu
 
 - **Live Interactive Prototype:** [Open prototype](https://vic-care-flow.lovable.app/)
 - **Final Presentation — PDF:** [View final presentation](design/Centralised%20COVID-19%20Patient%20Monitoring_v7.1.pdf)
-- **Presentation Deck — Canva:** [Open presentation in Canva](https://canva.link/h5qa5k5uftf1lu5)
+- **Presentation Deck — Canva:** [Open presentation in Canva](https://vcemathmethods.my.canva.site/centralised-covid-19-patient-monitoring)
 - **Interactive ERD — dbdiagram.io:** [Open interactive ERD](https://dbdiagram.io/d/patient-monitoring-ERD-6a852529fd15a881e5b0adb5)
 - **ERD source and notes:** [design/erd/](design/erd/)
 - **User Flow / Activity Diagram:** [design/user-flow/](design/user-flow/)
